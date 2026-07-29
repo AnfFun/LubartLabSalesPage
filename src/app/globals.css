@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --color-orange: #f97316;
+  --color-graphite: #09090b;
+  --color-paper: #f6f5f2;
+  --color-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-graphite);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: var(--font-fixel-text), Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+.holding-page {
+  min-height: 100svh;
+  padding: clamp(1rem, 2.5vw, 2rem);
+}
+
+.holding-page__frame {
+  display: grid;
+  min-height: calc(100svh - clamp(2rem, 5vw, 4rem));
+  grid-template-rows: auto 1fr auto;
+  border: 1px solid rgb(9 9 11 / 14%);
+  background: var(--color-white);
+  padding: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.holding-page__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.holding-page__brand span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.holding-page__content {
+  align-self: center;
+  max-width: 64rem;
+  padding-block: 4rem;
+}
+
+.holding-page__eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--color-orange);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.holding-page h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--font-fixel-display), Arial, sans-serif;
+  font-size: clamp(2.75rem, 8vw, 7.5rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  text-wrap: balance;
+}
+
+.holding-page__content > p:last-child {
+  max-width: 40rem;
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
+  color: rgb(9 9 11 / 68%);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  line-height: 1.55;
+}
+
+.holding-page__email {
+  width: fit-content;
+  font-size: 0.875rem;
+  text-underline-offset: 0.25em;
+}
+
+.holding-page__email:focus-visible {
+  border-radius: 0.125rem;
+  outline: 3px solid var(--color-orange);
+  outline-offset: 0.25rem;
+}
+
+@media (max-width: 40rem) {
+  .holding-page__frame {
+    min-height: calc(100svh - 2rem);
+  }
+}

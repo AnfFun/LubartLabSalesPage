@@ -1,9 +1,9 @@
 # LubartLab landing: project brief
 
-**Status:** Step 02 complete; Step 03 is next
+**Status:** Step 03 complete; Step 04 is next
 **Language:** Ukrainian only
 **Canonical URL:** `https://lubartlab.com.ua`
-**Last updated:** 2026-07-29
+**Last updated:** 2026-07-30
 
 ## Purpose
 
@@ -147,14 +147,21 @@ The technical holding page is not an approved design concept and must not become
 
 ## Current implementation
 
-Step 02 implements the approved brand shell and typographic hero, including the
-three system nodes, restrained AI signal, first-viewport motion, responsive
-mobile choreography, and a temporary email-only contact handoff.
+Steps 02 and 03 implement the approved brand shell, typographic hero, and three
+service directions. The hero includes three system nodes, a restrained AI
+signal, first-viewport motion, responsive mobile choreography, and a temporary
+email-only contact handoff.
 
-Navigation grows with the page: links appear only when their destination
-sections exist. The Step 02 header therefore exposes the brand and a working
-contact CTA rather than dead links to Steps 03–05. Step 06 replaces the
-temporary contact handoff with the accepted production form.
+The services section presents business websites, e-commerce, and web solutions
+with integrations as three equal open modules. Each module explains a business
+need and the likely solution. Static system fragments distinguish the
+directions without client claims, platform branding, CRM positioning, or
+motion-dependent information.
+
+Navigation grows with the page: desktop now includes a working “Послуги” anchor
+alongside the contact CTA. Mobile retains the direct contact action until more
+navigation destinations exist. Step 06 replaces the temporary contact handoff
+with the accepted production form.
 
 ## Technical architecture
 
@@ -199,9 +206,9 @@ temporary contact handoff with the accepted production form.
 - No Google Analytics, Meta Pixel, third-party tracker, custom analytics events, or PII in analytics.
 - v1 operational diagnostics use Vercel runtime logs and Resend delivery logs without form values.
 
-## Out of scope after Step 02
+## Out of scope after Step 03
 
-- Production implementation of services, process, and selected work.
+- Production implementation of process and selected work.
 - Contact form implementation.
 - `/privacy` implementation.
 - Cross-section motion, the desktop cursor, and final accessibility audit.

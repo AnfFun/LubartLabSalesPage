@@ -1,26 +1,56 @@
+import { Hero } from "@/components/hero";
 import { siteConfig } from "@/lib/site";
 
 export default function Home() {
   return (
-    <main className="holding-page">
-      <div className="holding-page__frame">
-        <p className="holding-page__brand" aria-label="LubartLab">
-          <span aria-hidden="true">L.</span>
-          LubartLab
-        </p>
+    <>
+      <a className="skip-link" href="#main-content">
+        Перейти до основного вмісту
+      </a>
 
-        <div className="holding-page__content">
-          <p className="holding-page__eyebrow">AI-powered web studio</p>
-          <h1>Нова версія сайту готується</h1>
-          <p>
-            Створюємо вебрішення для бізнесу: сайти, e-commerce та інтеграції.
-          </p>
-        </div>
-
-        <a className="holding-page__email" href={`mailto:${siteConfig.email}`}>
-          {siteConfig.email}
+      <header className="site-header page-grid">
+        <a
+          className="brand-lockup"
+          href="#hero"
+          aria-label="LubartLab — на початок"
+        >
+          <span className="brand-mark" aria-hidden="true">
+            L.
+          </span>
+          <span className="brand-name">LubartLab</span>
         </a>
-      </div>
-    </main>
+
+        <nav aria-label="Головна навігація">
+          <a className="header-cta" href="#contact">
+            <span>Обговорити проєкт</span>
+            <span className="header-cta__arrow" aria-hidden="true">
+              ↗
+            </span>
+          </a>
+        </nav>
+      </header>
+
+      <main id="main-content" tabIndex={-1}>
+        <Hero />
+
+        <section
+          className="contact-handoff page-grid"
+          id="contact"
+          aria-labelledby="contact-title"
+        >
+          <div className="contact-handoff__content">
+            <p className="section-label">Контакт</p>
+            <h2 id="contact-title">Хороші ідеї починаються з діалогу.</h2>
+            <a
+              className="contact-handoff__email"
+              href={`mailto:${siteConfig.email}`}
+            >
+              <span>{siteConfig.email}</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

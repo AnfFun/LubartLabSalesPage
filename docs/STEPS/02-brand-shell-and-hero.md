@@ -1,7 +1,8 @@
 # Step 02 — Brand shell and hero
 
-**Status:** Not started
+**Status:** Done
 **Depends on:** Step 01
+**Completed:** 2026-07-29
 
 ## Business outcome
 
@@ -27,6 +28,16 @@ A visitor immediately recognises LubartLab, understands the main promise, and ca
 
 ## Verification
 
-- Component tests for interactive navigation state if needed.
-- Browser QA at representative desktop and mobile widths.
-- Console and keyboard-focus checks.
+- The header exposes only working destinations; later anchor links remain owned
+  by their corresponding implementation steps.
+- The temporary contact handoff keeps both CTAs functional without introducing
+  the Step 06 form, privacy, or API scope early.
+- Under Node.js `24.18.0`, `pnpm check` passed lint, typecheck, 3 unit tests, and
+  the production build.
+- Under Node.js `24.18.0`, `pnpm test:e2e` passed all 7 Chromium tests.
+- Browser-driven QA covered `1440 × 1000`, `390 × 844`, and `320 × 720`,
+  keyboard focus, the contact anchor, horizontal overflow, and console output.
+- Automated and rendered checks confirmed static readable states for reduced
+  motion and JavaScript-disabled browsing.
+
+Step 03 is now the next permitted logical block.

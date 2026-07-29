@@ -15,7 +15,7 @@ Each step is an independently reviewable business block. A step becomes `Done` o
 | --- | --- | --- |
 | [00](00-foundation.md) | Reproducible project, documentation, and production delivery foundation | Done |
 | [01](01-art-direction.md) | Approved visual language before feature code | Done |
-| [02](02-brand-shell-and-hero.md) | Clear first impression and primary studio promise | Not started |
+| [02](02-brand-shell-and-hero.md) | Clear first impression and primary studio promise | Done |
 | [03](03-services.md) | Visitors understand the three things LubartLab builds | Not started |
 | [04](04-ai-powered-process.md) | Visitors understand the fast, controlled, human-owned process | Not started |
 | [05](05-selected-work.md) | Honest proof-section structure ready for future cases | Not started |
@@ -39,6 +39,6 @@ Every implementation step must:
 
 ## Current boundary
 
-Step 01 is approved and complete. Step 02 is the next permitted logical block,
-but remains `Not started`. The neutral holding page stays in production until a
-later implementation step explicitly replaces it.
+Steps 00–02 are complete. Step 03 is the next permitted logical block. The
+Step 02 brand shell and hero replace the neutral holding page while the
+homepage remains `noindex` until the final content release.

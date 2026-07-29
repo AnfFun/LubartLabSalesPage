@@ -2,7 +2,10 @@
 
 Ukrainian-only, production-like landing page for LubartLab, an AI-powered studio that builds business websites, e-commerce, and integrated web solutions.
 
-The repository currently contains the technical foundation and a temporary `noindex` holding page. Product sections and motion are intentionally paused until the art direction is approved.
+The repository contains the technical foundation, approved art direction, and
+the implemented brand shell and hero. Later product sections remain split into
+independently verified steps. The site stays `noindex` until the final content
+release.
 
 ## Stack
 

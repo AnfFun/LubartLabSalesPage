@@ -9,4 +9,10 @@ describe("site configuration", () => {
   it("uses the accepted public contact email", () => {
     expect(siteConfig.email).toBe("lubartlab@gmail.com");
   });
+
+  it("uses the Ukrainian studio description", () => {
+    expect(siteConfig.description).toBe(
+      "Студія вебрішень для бізнесу: бізнес-сайти, e-commerce та інтеграції.",
+    );
+  });
 });

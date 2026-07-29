@@ -1,6 +1,6 @@
 # LubartLab landing: project brief
 
-**Status:** art direction approved; feature implementation pending
+**Status:** Step 02 complete; Step 03 is next
 **Language:** Ukrainian only
 **Canonical URL:** `https://lubartlab.com.ua`
 **Last updated:** 2026-07-29
@@ -145,6 +145,17 @@ inside the boards remains provisional and is not approved production copy.
 
 The technical holding page is not an approved design concept and must not become the production landing by inertia.
 
+## Current implementation
+
+Step 02 implements the approved brand shell and typographic hero, including the
+three system nodes, restrained AI signal, first-viewport motion, responsive
+mobile choreography, and a temporary email-only contact handoff.
+
+Navigation grows with the page: links appear only when their destination
+sections exist. The Step 02 header therefore exposes the brand and a working
+contact CTA rather than dead links to Steps 03–05. Step 06 replaces the
+temporary contact handoff with the accepted production form.
+
 ## Technical architecture
 
 - Next.js App Router and TypeScript.
@@ -188,12 +199,11 @@ The technical holding page is not an approved design concept and must not become
 - No Google Analytics, Meta Pixel, third-party tracker, custom analytics events, or PII in analytics.
 - v1 operational diagnostics use Vercel runtime logs and Resend delivery logs without form values.
 
-## Out of scope after Step 01
+## Out of scope after Step 02
 
-- Final copy.
-- Production implementation of the approved homepage sections.
+- Production implementation of services, process, and selected work.
 - Contact form implementation.
 - `/privacy` implementation.
-- Production implementation of the approved motion choreography.
+- Cross-section motion, the desktop cursor, and final accessibility audit.
 - Real case-study content.
-- Production search indexing while the holding page is live.
+- Production search indexing before Step 08 and the final content release.

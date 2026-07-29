@@ -58,6 +58,9 @@ Accepted decisions are the source of truth until explicitly superseded.
 | D-052 | Motion is expressive but event-driven, with only a subtle hero signal ambient at rest. Fine-pointer desktop fully replaces the native cursor with contextual states; mobile has no cursor dependency. Reduced motion removes masks, scale, sticky, ambient, inertia, and scroll-linked movement while retaining short fades. | Accepted |
 | D-053 | All supporting copy in Step 01 artboards is provisional composition text and does not approve production copy. | Accepted |
 | D-054 | Step 01 uses original editable HTML/CSS artboards and generated PNG exports. External references are stored only as attributed principle links, and raw Image Gen explorations are not committed. | Accepted |
+| D-055 | Step 02 production copy uses “Створюємо вебрішення, на яких працює бізнес.”, the supporting line “Бізнес-сайти, e-commerce та інтеграції для зрозумілої комунікації, продажів і автоматизації процесів.”, the AI signal “AI — робочий інструмент. Рішення та відповідальність — за людьми.”, and the CTA “Обговорити проєкт”. | Accepted |
+| D-056 | Navigation is progressive while the landing is built block by block: Step 02 exposes only real destinations, so the header contains the brand and working `#contact` CTA, including a direct mobile CTA. The temporary contact handoff contains “Хороші ідеї починаються з діалогу.” and the public email; Step 06 replaces it with the production form. | Accepted |
+| D-057 | Step 02 motion is limited to a layout-stable hero line reveal, signal drawing, and one calm ambient pulse. Reduced-motion and no-JavaScript modes are static and fully readable; shared reveal primitives, scroll-linked choreography, and the custom cursor remain Step 07 scope. | Accepted |
 
 ## Open constraints
 

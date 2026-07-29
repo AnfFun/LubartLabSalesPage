@@ -1,6 +1,6 @@
 # LubartLab landing: project brief
 
-**Status:** foundation
+**Status:** art direction approved; feature implementation pending
 **Language:** Ukrainian only
 **Canonical URL:** `https://lubartlab.com.ua`
 **Last updated:** 2026-07-29
@@ -47,7 +47,7 @@ CRM may appear as one integration example, but it is not a positioning focus.
 2. Hero with the main value proposition and restrained AI-powered signal.
 3. “What we build” with the three offer directions.
 4. “How we work” with the AI-assisted but human-owned process.
-5. “Selected work” with two or three honest “Кейс готується” placeholders.
+5. “Selected work” with exactly two honest “Кейс готується” placeholders.
 6. Contact section with the production form and public email.
 7. Minimal footer.
 
@@ -104,26 +104,44 @@ Public privacy commitments:
 
 ## Visual direction
 
+- Approved concept: **“Жива бізнес-система”**.
 - Preserve the `L.` mark.
 - Palette: orange `#F97316`, graphite `#09090B`, white, and warm paper `#F6F5F2`.
 - Fixel Text is the body and interface face.
 - Fixel Display SemiBold is the heading face.
-- Large kinetic Ukrainian typography, a hard grid, whitespace, system diagrams, and UI fragments.
-- One strong sticky-scroll episode on desktop.
-- Masks, reveals, scaling, transitions, magnetic or hover details, and a desktop-only custom cursor.
+- Use a light-dominant hard grid, large Ukrainian typography, whitespace,
+  system diagrams, and a continuous orange signal.
+- The hero is typographic-first; the three offer directions are equal open
+  modules rather than cards, a carousel, or another sticky scene.
+- The process is the single dark sticky-scroll episode on desktop.
+- Selected work contains exactly two neutral “Кейс готується” system windows.
+- Contact ends with a human invitation, visible email, and a grid-integrated form.
+- Expressive motion is event-driven; only the subtle hero signal may remain ambient.
+- Fine-pointer desktop replaces the native cursor with contextual default,
+  action, text, and dark-surface states.
+- On light surfaces, meaningful text remains graphite. Orange is used for
+  signals, underlines, outlined cursor cores, and nonessential indices because
+  the accepted orange does not meet text contrast against white or paper.
 - No photography, AI-generated people, decorative 3D, or WebGL in v1.
 
-Mobile receives its own simplified choreography: sequential reveals, vertical diagrams, smaller and faster movement, no cursor dependency, and no scroll hijacking.
+Mobile receives its own vertical choreography with local signal fragments,
+ordinary process flow, no sticky, hover, cursor dependency, or scroll hijacking.
+Reduced motion removes masks, scaling, sticky, ambient, and scroll-linked
+movement while retaining short opacity fades and a cursor without inertia.
 
 ## Design process
 
 Visual implementation has a mandatory design gate:
 
-1. Create and approve art direction.
-2. Approve hero concepts for desktop and mobile.
-3. Approve concepts for the remaining sections.
+1. Create and approve art direction. **Completed 2026-07-29.**
+2. Approve hero concepts for desktop and mobile. **Completed 2026-07-29.**
+3. Approve concepts for the remaining sections. **Completed 2026-07-29.**
 4. Implement one approved business block at a time.
 5. Compare rendered output with the approved concept and record intentional deviations.
+
+The approved source, PNG exports, motion storyboard, and implementation ledger
+are stored in [`docs/art-direction/`](art-direction/README.md). Supporting copy
+inside the boards remains provisional and is not approved production copy.
 
 The technical holding page is not an approved design concept and must not become the production landing by inertia.
 
@@ -170,13 +188,12 @@ The technical holding page is not an approved design concept and must not become
 - No Google Analytics, Meta Pixel, third-party tracker, custom analytics events, or PII in analytics.
 - v1 operational diagnostics use Vercel runtime logs and Resend delivery logs without form values.
 
-## Out of scope for the current foundation
+## Out of scope after Step 01
 
 - Final copy.
-- Approved section designs.
-- Homepage sections beyond the holding page.
+- Production implementation of the approved homepage sections.
 - Contact form implementation.
 - `/privacy` implementation.
-- Motion choreography.
+- Production implementation of the approved motion choreography.
 - Real case-study content.
 - Production search indexing while the holding page is live.

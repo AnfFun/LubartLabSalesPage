@@ -1,7 +1,8 @@
 # Step 01 — Art direction
 
-**Status:** Not started
+**Status:** Done
 **Depends on:** Step 00
+**Approved:** 2026-07-29
 
 ## Business outcome
 
@@ -28,4 +29,21 @@ The visual language is approved before implementation time is spent on a directi
 
 ## Verification
 
-Keep a short concept-to-implementation reference ledger for later steps. Do not begin Step 02 before approval.
+- The complete desktop, mobile, and motion package in
+  [`docs/art-direction/`](../art-direction/README.md) was explicitly approved
+  by the user on 2026-07-29.
+- The concept-to-implementation ledger records the approved intent and later
+  owner for every homepage surface.
+- Browser-first QA covered the editable boards, Fixel loading, palette,
+  composition, and exact export geometry.
+- Local Chrome/Playwright fallback covered the Motion entry, bounded sticky
+  process, contextual cursor, text selection, keyboard focus, `390px` mobile
+  flow, overflow, and system/manual reduced motion.
+- The temporary React/Motion review route was removed before delivery.
+- Under Node.js `24.14.0`, `pnpm check` passed lint, typecheck, 2 unit tests, and
+  the production build.
+- Under Node.js `24.14.0`, `pnpm test:e2e` passed all 3 Chromium tests.
+- The production holding page and public route set are unchanged.
+
+Step 02 is now the next permitted logical block; it has not been started by
+this step.

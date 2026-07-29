@@ -16,7 +16,7 @@ The project can be installed, verified, and deployed predictably before visual f
 - Add Vitest and Playwright foundations.
 - Add Vercel Analytics and Speed Insights integrations.
 - Disable Vercel Git auto-deployments.
-- Add a production-only GitHub Actions workflow.
+- Add a production-only GitHub Actions workflow that deploys every commit pushed to `main`.
 - Link the repository to the existing Vercel project.
 - Make the apex domain canonical and configure permanent alternate-host redirects.
 
@@ -34,7 +34,8 @@ The project can be installed, verified, and deployed predictably before visual f
 - Playwright verifies the holding page and no horizontal overflow.
 - `.vercel/project.json` points to the existing `lubart-lab-landing` project.
 - Vercel Git integration cannot create preview or automatic production deployments.
-- The GitHub Actions workflow targets production only.
+- The GitHub Actions workflow targets production only and runs for every push to `main`, including documentation-only changes.
+- The workflow has no manual trigger, path filter, conditional bypass, or accepted skip marker.
 - A production deployment is `READY`.
 - `https://lubartlab.com.ua` serves the new deployment.
 - `www.lubartlab.com.ua` and `lubart-lub.vercel.app` return permanent redirects to canonical.

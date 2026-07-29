@@ -36,7 +36,8 @@
 ## Delivery
 
 - Vercel automatic Git deployments are disabled.
-- Production deploys run only from the GitHub Actions workflow on `main`.
+- Every commit pushed to `main`, including documentation-only changes, runs the full GitHub Actions workflow and deploys to production.
+- The production workflow is triggered only by pushes to `main`; do not add manual triggers, path filters, conditional bypasses, or `[skip ci]`-style commit markers.
 - Do not introduce preview deployments.
 - Canonical host is `https://lubartlab.com.ua`; `www` and `lubart-lub.vercel.app` permanently redirect to it.
 - PRs target `main`.

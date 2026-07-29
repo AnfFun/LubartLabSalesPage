@@ -48,6 +48,7 @@ Accepted decisions are the source of truth until explicitly superseded.
 | D-042 | If no ticket ID is provided, Git delivery uses the relevant step number: `codex/block-<NN>-<slug>` and `<NN> - <functional description>`. | Accepted |
 | D-043 | Vercel Web Analytics is enabled for LubartLab. The Speed Insights integration remains present but collection stays disabled because the Hobby slot remains assigned to `freelance-docs-generator`. | Accepted |
 | D-044 | GitHub Actions uses a dedicated Vercel token scoped to `anffun's projects`, stored only as `VERCEL_TOKEN`, with rotation due by 2027-07-29. | Accepted |
+| D-045 | Every commit pushed to `main`, including documentation-only changes, runs the full production workflow and deploys. Manual triggers, path filters, conditional bypasses, and skip markers are not used. | Accepted |
 
 ## Open constraints
 

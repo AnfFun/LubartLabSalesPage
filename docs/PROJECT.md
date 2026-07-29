@@ -155,7 +155,8 @@ The technical holding page is not an approved design concept and must not become
 - Hobby plan is accepted for this noncommercial learning deployment.
 - No preview deployments.
 - Vercel Git auto-deployments are disabled.
-- GitHub Actions deploys `main` automatically with a pinned Vercel CLI.
+- GitHub Actions deploys every commit pushed to `main`, including documentation-only changes, with a pinned Vercel CLI.
+- The production workflow has no manual trigger, path filter, conditional bypass, or accepted skip marker.
 - GitHub stores a dedicated Vercel CI token scoped to `anffun's projects`; rotate it by 2027-07-29.
 - CI runs install, lint, typecheck, unit tests, production build, E2E, Vercel prebuild/deploy, and a production smoke check.
 - `https://lubartlab.com.ua` is canonical.

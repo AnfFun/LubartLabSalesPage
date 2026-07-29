@@ -59,7 +59,7 @@ The contact form will require:
 
 ## Deployment
 
-The existing Vercel project `lubart-lab-landing` is reused. Vercel Git auto-deployments are disabled; `.github/workflows/production.yml` is the only intended production path from `main`.
+The existing Vercel project `lubart-lab-landing` is reused. Vercel Git auto-deployments are disabled; every commit pushed to `main`, including documentation-only changes, runs `.github/workflows/production.yml` and deploys to production. The workflow has no manual trigger or path-based bypass.
 
 Required GitHub Actions secrets:
 

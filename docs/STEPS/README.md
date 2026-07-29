@@ -13,7 +13,7 @@ Each step is an independently reviewable business block. A step becomes `Done` o
 
 | Step | Business outcome | Status |
 | --- | --- | --- |
-| [00](00-foundation.md) | Reproducible project, documentation, and production delivery foundation | In progress |
+| [00](00-foundation.md) | Reproducible project, documentation, and production delivery foundation | Done |
 | [01](01-art-direction.md) | Approved visual language before feature code | Not started |
 | [02](02-brand-shell-and-hero.md) | Clear first impression and primary studio promise | Not started |
 | [03](03-services.md) | Visitors understand the three things LubartLab builds | Not started |

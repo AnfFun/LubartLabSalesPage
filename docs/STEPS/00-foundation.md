@@ -1,6 +1,6 @@
 # Step 00 — Foundation
 
-**Status:** In progress
+**Status:** Done
 
 ## Business outcome
 
@@ -62,9 +62,11 @@ Completed on 2026-07-29:
 - Production metadata contains Ukrainian language, canonical, and `noindex`; `/robots.txt` disallows `/`.
 - GitHub repository secrets `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` configured.
 - Dedicated `VERCEL_TOKEN` configured as a GitHub Actions secret and scheduled for rotation by 2027-07-29.
+- Commit `aa32255` pushed to `codex/block-00-foundation` and `main`; `main` is the repository default branch.
+- Push-triggered GitHub Actions run `30463951690` completed successfully with every verification and deployment step green.
+- CI deployment `dpl_AKSAcByEVnnbpvrskmy2T6GJiTbF` reached `READY` for commit `aa32255`.
+- Final production checks returned `200` for canonical and `308` for both alternate hosts; the deployment had no error or fatal runtime logs.
 
-Open before this step can become `Done`:
+Non-blocking deferred cleanup:
 
-- Create the `block-00` branch, commit, and push the foundation to the currently empty GitHub repository.
-- Run the GitHub Actions production workflow from the pushed `main`.
-- Decide when to remove the obsolete Laravel/Neon production environment variables. They remain temporarily to preserve rollback capability.
+- Obsolete Laravel/Neon production environment variables remain temporarily to preserve rollback capability. Remove them only when the rollback window is intentionally closed.

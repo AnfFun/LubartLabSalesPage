@@ -75,6 +75,7 @@ test("does not overflow from 320 pixels through desktop", async ({ page }) => {
   for (const viewport of [
     { width: 320, height: 720 },
     { width: 390, height: 844 },
+    { width: 641, height: 844 },
     { width: 1024, height: 768 },
     { width: 1440, height: 1000 },
   ]) {
@@ -153,7 +154,7 @@ test("removes hero motion when reduced motion is requested", async ({
   ).toBe(0);
 });
 
-test("keeps the hero and contact readable without JavaScript", async ({
+test("keeps the hero, services, and contact readable without JavaScript", async ({
   browser,
 }) => {
   const context = await browser.newContext({
@@ -175,6 +176,18 @@ test("keeps the hero and contact readable without JavaScript", async ({
   ).toBeVisible();
   await expect(
     page.getByText("Рішення та відповідальність — за людьми."),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      level: 2,
+      name: "Сайт, магазин або вебсистема.",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      level: 3,
+      name: "Вебрішення та інтеграції",
+    }),
   ).toBeVisible();
   await expect(
     page.getByRole("heading", {

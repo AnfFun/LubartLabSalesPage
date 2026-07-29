@@ -61,6 +61,8 @@ Accepted decisions are the source of truth until explicitly superseded.
 | D-055 | Step 02 production copy uses “Створюємо вебрішення, на яких працює бізнес.”, the supporting line “Бізнес-сайти, e-commerce та інтеграції для зрозумілої комунікації, продажів і автоматизації процесів.”, the AI signal “AI — робочий інструмент. Рішення та відповідальність — за людьми.”, and the CTA “Обговорити проєкт”. | Accepted |
 | D-056 | Navigation is progressive while the landing is built block by block: Step 02 exposes only real destinations, so the header contains the brand and working `#contact` CTA, including a direct mobile CTA. The temporary contact handoff contains “Хороші ідеї починаються з діалогу.” and the public email; Step 06 replaces it with the production form. | Accepted |
 | D-057 | Step 02 motion is limited to a layout-stable hero line reveal, signal drawing, and one calm ambient pulse. Reduced-motion and no-JavaScript modes are static and fully readable; shared reveal primitives, scroll-linked choreography, and the custom cursor remain Step 07 scope. | Accepted |
+| D-058 | Step 03 uses the heading “Сайт, магазин або вебсистема.” and need-to-solution copy for exactly three directions. Public service diagrams omit CRM, ERP, platform logos, client data, and metrics. | Accepted |
+| D-059 | Service directions are static semantic articles without individual CTA. Desktop navigation adds “Послуги” to `#services`; mobile keeps the direct “Обговорити проєкт” action. Entry animation and cross-section choreography remain Step 07 scope. | Accepted |
 
 ## Open constraints
 

@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { Services } from "@/components/services";
 import { siteConfig } from "@/lib/site";
 
 export default function Home() {
@@ -20,7 +21,10 @@ export default function Home() {
           <span className="brand-name">LubartLab</span>
         </a>
 
-        <nav aria-label="Головна навігація">
+        <nav className="header-nav" aria-label="Головна навігація">
+          <a className="header-nav__link" href="#services">
+            Послуги
+          </a>
           <a className="header-cta" href="#contact">
             <span>Обговорити проєкт</span>
             <span className="header-cta__arrow" aria-hidden="true">
@@ -32,6 +36,7 @@ export default function Home() {
 
       <main id="main-content" tabIndex={-1}>
         <Hero />
+        <Services />
 
         <section
           className="contact-handoff page-grid"

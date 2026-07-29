@@ -49,6 +49,15 @@ Accepted decisions are the source of truth until explicitly superseded.
 | D-043 | Vercel Web Analytics is enabled for LubartLab. The Speed Insights integration remains present but collection stays disabled because the Hobby slot remains assigned to `freelance-docs-generator`. | Accepted |
 | D-044 | GitHub Actions uses a dedicated Vercel token scoped to `anffun's projects`, stored only as `VERCEL_TOKEN`, with rotation due by 2027-07-29. | Accepted |
 | D-045 | Every commit pushed to `main`, including documentation-only changes, runs the full production workflow and deploys. Manual triggers, path filters, conditional bypasses, and skip markers are not used. | Accepted |
+| D-046 | Step 01 art direction “Жива бізнес-система” is explicitly approved; `docs/art-direction/` is the visual source of truth for Steps 02–07. | Accepted |
+| D-047 | The approved system is light-dominant, typographic-first, and built on a hard 12-column desktop / 4-column mobile grid with one continuous orange signal. Meaningful light-surface text remains graphite; orange is decorative or paired with graphite for accessible contrast. | Accepted |
+| D-048 | Services use three equally weighted open modules connected by the signal; there are no cards, carousel, service hierarchy, or sticky service sequence. | Accepted |
+| D-049 | The process is the only dark sticky-scroll episode on desktop. Mobile and reduced-motion render the same four human-owned stages in ordinary flow. | Accepted |
+| D-050 | Selected work contains exactly two oversized neutral “Кейс готується” slots until real material is approved. | Accepted |
+| D-051 | Contact uses a human invitation, visible public email, and the already constrained form integrated into the page grid. | Accepted |
+| D-052 | Motion is expressive but event-driven, with only a subtle hero signal ambient at rest. Fine-pointer desktop fully replaces the native cursor with contextual states; mobile has no cursor dependency. Reduced motion removes masks, scale, sticky, ambient, inertia, and scroll-linked movement while retaining short fades. | Accepted |
+| D-053 | All supporting copy in Step 01 artboards is provisional composition text and does not approve production copy. | Accepted |
+| D-054 | Step 01 uses original editable HTML/CSS artboards and generated PNG exports. External references are stored only as attributed principle links, and raw Image Gen explorations are not committed. | Accepted |
 
 ## Open constraints
 
